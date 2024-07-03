@@ -1,0 +1,41 @@
+/* -------- Logo CSS Settings -------- */
+ .logo {
+    line-height: 1;
+    text-decoration: none;
+    position: relative;
+ }
+
+ @media (min-width: 1200px) {
+    .logo {
+        width: 280px;
+    }
+ }
+
+ .logo img {
+    max-height: 26px;
+    margin-right: 6px;
+ }
+
+ .logo span {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--accent);
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+ }
+ 
+ .logo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 72%;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.5s ease;
+ }
+
+
+.logo:hover::after {
+    bottom: -6px
+}
